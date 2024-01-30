@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="project.server"/>
+
+    <bean id="mainAppDatabase" class="project.server.core.database.impl.PostgreSQLDatabaseProvider"/>
+    <bean id="anotherAppDatabase" class="project.server.core.database.impl.SQLLiteDatabaseProvider"/>
+    <bean id="clientDatabaseService" class="project.server.service.impl.ClientDatabaseServiceImpl"/>
+
+    <bean id="mainApp" class="project.server.core.app.impl.MainApp"/>
+    <bean id="anotherApp" class="project.server.core.app.impl.AnotherApp"/>
+
+    <!--<import resource="spring/servicesContext.xml"/>
+    <import resource="spring/databaseContext.xml"/>-->
+</beans>

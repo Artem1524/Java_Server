@@ -1,14 +1,13 @@
 package project.server.utility.builder;
 
-import project.server.utility.base.ClientInfoData;
-import project.server.utility.dto.ClientDto;
+import project.server.base.dto.ClientDto;
 
 public class ClientDtoBuilder {
 
-    private ClientDto data;
+    /*private ClientDto data;
 
     public ClientDtoBuilder() {
-        data = new ClientDto();
+        // data = new ClientDto();
     }
 
     public ClientDtoBuilder setFirstName(String firstName) {
@@ -26,12 +25,12 @@ public class ClientDtoBuilder {
         return this;
     }
 
-    public ClientDtoBuilder setClientInfoData(ClientInfoData clientInfoData) {
+    /*public ClientDtoBuilder setClientInfoData(ClientInfoData clientInfoData) {
         data.setClientInfoData(clientInfoData);
         return this;
     }
 
     public ClientDto build() {
         return data;
-    }
+    }*/
 }

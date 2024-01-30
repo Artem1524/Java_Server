@@ -13,6 +13,14 @@
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>
         </Logger>
+        <Logger name="project.server.core.app" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
+        <Logger name="project.server.base.dao" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>
         <Logger name="project.server.core.Main" level="info"/>
         <Root level="error">
             <AppenderRef ref="Console"/>
