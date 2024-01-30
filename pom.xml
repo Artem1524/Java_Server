@@ -6,7 +6,7 @@
 
     <groupId>Java_Server</groupId>
     <artifactId>Java_Server</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>3.0</version>
     <packaging>war</packaging>
 
     <name>Java server Webapp</name>
@@ -109,6 +109,12 @@
             <version>${springVersion}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${springVersion}</version>
+        </dependency>
+
         <!--<dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -126,6 +132,14 @@
             <artifactId>log4j-core</artifactId>
             <version>${log4jVersion}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.6.Final</version>
+        </dependency>
+
+
 		
 
     </dependencies>

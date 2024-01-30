@@ -1,15 +1,13 @@
 package project.server.utility.dataprovider.impl;
 
-import project.server.utility.base.ClientInfoData;
 import project.server.utility.dataprovider.DataProvider;
-import project.server.utility.dto.ClientDto;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.NumberFormat;
 
 public class ClientDataProvider implements DataProvider {
-    private ClientDto data;
+    /*private ClientDto data;
 
     public ClientDataProvider() {
         data = new ClientDto();
@@ -39,13 +37,13 @@ public class ClientDataProvider implements DataProvider {
                 new ClientInfoData(balance, position)
         );
         return this;
-    }
+    }*/
 
     @Override
     public String getStringData() {
-        return String.format("'ФИО': %s %s %s, 'Данные': Баланс = %s, Позиция = %d",
+        return "1234";/*String.format("'ФИО': %s %s %s, 'Данные': Баланс = %s, Позиция = %d",
                 data.getFamilyName(), data.getFirstName(), data.getSecondName(),
-                formatBalance(data.getClientInfoData().getBalance()), data.getClientInfoData().getPosition());
+                formatBalance(data.getClientInfoData().getBalance()), data.getClientInfoData().getPosition());*/
     }
 
     public String formatBalance(BigDecimal balance) {

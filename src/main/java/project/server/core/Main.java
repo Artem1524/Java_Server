@@ -13,7 +13,7 @@ public class Main {
 
     private static App mainApp;
 
-    private static App anotherApp;
+    // private static App anotherApp;
 
     public static void main(String[] args) {
 
@@ -21,20 +21,11 @@ public class Main {
 
         try {
             ApplicationContext context = new ClassPathXmlApplicationContext(
-                    "/applicationContext.xml");
+                    "/src/main/webapp/WEB-INF/config/applicationContext.xml");
 
             mainApp = (App) context.getBean("mainApp");
-            anotherApp = (App) context.getBean("anotherApp");
 
-            mainApp.connectToDatabase();
-            mainApp.loadProfileData();
-            mainApp.saveDataToDatabase();
-            mainApp.closeDatabaseConnection();
-
-            anotherApp.connectToDatabase();
-            anotherApp.loadProfileData();
-            anotherApp.saveDataToDatabase();
-            anotherApp.closeDatabaseConnection();
+            mainApp.run();
         } catch (Exception e) {
             LOGGER.error(e);
         }

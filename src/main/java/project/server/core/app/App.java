@@ -2,7 +2,6 @@ package project.server.core.app;
 
 public interface App extends AutoCloseable {
     void connectToDatabase();
-    void saveDataToDatabase();
+    void run();
     void closeDatabaseConnection();
-    void loadProfileData();
 }

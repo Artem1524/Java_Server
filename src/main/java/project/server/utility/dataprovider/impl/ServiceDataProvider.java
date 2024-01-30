@@ -1,7 +1,7 @@
 package project.server.utility.dataprovider.impl;
 
+import project.server.base.dto.ClientServiceDto;
 import project.server.utility.dataprovider.DataProvider;
-import project.server.utility.dto.ClientServiceDto;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

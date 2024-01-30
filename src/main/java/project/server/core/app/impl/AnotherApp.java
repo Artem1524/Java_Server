@@ -24,7 +24,7 @@ public class AnotherApp implements App {
     }
 
     @Override
-    public void saveDataToDatabase() {
+    public void run() {
         database.saveClientData(data);
     }
 
@@ -33,12 +33,12 @@ public class AnotherApp implements App {
         database.closeConnection();
     }
 
-    @Override
+    /*@Override
     public void loadProfileData() {
         data = new ServiceDataProvider()
                 .withServiceName("Сберпрайм")
                 .withStartDate(new GregorianCalendar(2023, 10, 1).getTime());
-    }
+    }*/
 
     @Override
     public void close() throws Exception {

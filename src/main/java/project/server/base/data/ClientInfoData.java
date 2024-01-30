@@ -1,13 +1,14 @@
-package project.server.utility.base;
+package project.server.base.data;
 
+import javax.persistence.Column;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
 public class ClientInfoData implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-
+    @Column(name = "balance")
     private BigDecimal balance;
+    @Column(name = "position")
     private Integer position;
 
     public ClientInfoData() {

@@ -6,4 +6,5 @@
 
     <bean id="mainAppDatabase" class="project.server.core.database.impl.PostgreSQLDatabaseProvider"/>
     <bean id="anotherAppDatabase" class="project.server.core.database.impl.SQLLiteDatabaseProvider"/>
+    <bean id="clientDatabaseService" class="project.server.service.impl.ClientDatabaseServiceImpl"/>
 </beans>
