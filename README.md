@@ -3,4 +3,6 @@ Java Server
 
 ## Используемые технологии
 
-Java, Spring, Maven
+Java, Spring, Maven.
+Hibernate, PostgreSQL.
+Tomcat.
